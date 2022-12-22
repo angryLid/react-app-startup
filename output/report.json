@@ -1,7 +1,0 @@
-{
-    "timestamp":1657506976475,
-    "results":[
-        {"name":"HK","upload":5.27,"download":7.27,"latency":300},
-        {"name":"HK","upload":2.29,"download":4.62,"latency":134}
-    ]
-}
