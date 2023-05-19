@@ -1,0 +1,1 @@
+This is a react vite boilerplate project.
