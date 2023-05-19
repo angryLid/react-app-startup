@@ -1,12 +1,11 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 
-import { BaseLayout } from "./page/_Layout";
-
+import {App} from "./App"
 const root = document.getElementById("root") || document.createElement("div");
 
 createRoot(root).render(
   <React.StrictMode>
-    <BaseLayout />
+    <App />
   </React.StrictMode>
 );
