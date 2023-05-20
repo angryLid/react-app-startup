@@ -1,12 +1,12 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { RouterProvider } from "react-router-dom";
+import { Provider } from "react-redux";
+import { store } from "./store";
+import { router } from "./routes";
 
-import Index from "./pages";
-const router = createBrowserRouter([
-  {
-    element: <Index />,
-    path: "/",
-  },
-]);
 export const App = () => {
-  return <RouterProvider router={router} />;
+  return (
+    <Provider store={store}>
+      <RouterProvider router={router} />
+    </Provider>
+  );
 };

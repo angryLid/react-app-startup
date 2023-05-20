@@ -1,3 +1,14 @@
+import { increment } from "../store/counter";
+import { useAppDispatch, useAppSelector } from "../store/hooks";
+
 export default function () {
-  return <h1>This will not be rendered.</h1>;
+  const dispatch = useAppDispatch();
+  const { value: count } = useAppSelector((s) => s.counter);
+
+  return (
+    <div>
+      count: {count}
+      <button onClick={() => dispatch(increment())}>increase</button>
+    </div>
+  );
 }
