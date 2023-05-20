@@ -14,7 +14,7 @@ specifiers:
   prettier: ^2.8.1
   react: ^18.2.0
   react-dom: ^18.2.0
-  react-router: ^6.6.0
+  react-router-dom: ^6.6.0
   typescript: ^5.0.4
   vite: ^4.3.8
   zustand: ^4.3.8
@@ -22,7 +22,7 @@ specifiers:
 dependencies:
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
-  react-router: 6.6.0_react@18.2.0
+  react-router-dom: 6.11.2_biqbaboplfbrettd7655fr4n2y
   zustand: 4.3.8_react@18.2.0
 
 devDependencies:
@@ -575,8 +575,8 @@ packages:
       fastq: 1.14.0
     dev: true
 
-  /@remix-run/router/1.2.0:
-    resolution: {integrity: sha512-GO82KYYTWPRCgdNtnheaZG3LcViUlxRFlHM7ykh7N+ufoXi6PVIHoP+9RUG/vuzl2hr9i/h6EA1Eq+2HpqJ0gQ==}
+  /@remix-run/router/1.6.2:
+    resolution: {integrity: sha512-LzqpSrMK/3JBAVBI9u3NWtOhWNw5AMQfrUFYB0+bDHTSw17z++WJLsPsxAuK+oSddsxk4d7F/JcdDPM1M5YAhA==}
     engines: {node: '>=14'}
     dev: false
 
@@ -2072,13 +2072,26 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /react-router/6.6.0_react@18.2.0:
-    resolution: {integrity: sha512-+VPfCIaFbkW7BAiB/2oeprxKAt1KLbl+zXZ10CXOYezKWgBmTKyh8XjI53eLqY5kd7uY+V4rh3UW44FclwUU+Q==}
+  /react-router-dom/6.11.2_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-JNbKtAeh1VSJQnH6RvBDNhxNwemRj7KxCzc5jb7zvDSKRnPWIFj9pO+eXqjM69gQJ0r46hSz1x4l9y0651DKWw==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      react: '>=16.8'
+      react-dom: '>=16.8'
+    dependencies:
+      '@remix-run/router': 1.6.2
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+      react-router: 6.11.2_react@18.2.0
+    dev: false
+
+  /react-router/6.11.2_react@18.2.0:
+    resolution: {integrity: sha512-74z9xUSaSX07t3LM+pS6Un0T55ibUE/79CzfZpy5wsPDZaea1F8QkrsiyRnA2YQ7LwE/umaydzXZV80iDCPkMg==}
     engines: {node: '>=14'}
     peerDependencies:
       react: '>=16.8'
     dependencies:
-      '@remix-run/router': 1.2.0
+      '@remix-run/router': 1.6.2
       react: 18.2.0
     dev: false
 
